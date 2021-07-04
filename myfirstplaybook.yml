@@ -1,0 +1,13 @@
+---
+  - name : "My first play"
+    hosts: localhost
+
+    tasks:
+
+     - name: "test reachability"
+       ping:
+
+     - name: "Find FIles"
+       find:
+        paths: /home/martinjb15
+      
