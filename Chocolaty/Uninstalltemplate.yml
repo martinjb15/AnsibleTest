@@ -1,0 +1,8 @@
+---
+- name: "Chocolatey package uninstall"
+  hosts: wins
+  tasks:
+    - name: Uninstall adobe reader and pin
+      win_chocolatey:
+          name: adobereader
+          state: absent
